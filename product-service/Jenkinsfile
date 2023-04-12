@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {image 'jenkins/jnlp-slave:latest'}
+        label 'docker-jnlp-slave'
     }
     tools{
         gradle '7.0.2'
