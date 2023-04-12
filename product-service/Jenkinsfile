@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+       label "java-docker-slave"
+    }
     tools{
         gradle '7.0.2'
     }
