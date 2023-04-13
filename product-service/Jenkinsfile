@@ -2,7 +2,6 @@ pipeline {
     agent any
     tools{
         gradle '7.0.2'
-        docker 'docker'
     }
     stages {
         stage('Build') {
